@@ -1,0 +1,46 @@
+{
+ "url": "https://coreyjames.ai/stories/tools-that-build-tools-under-governance/",
+ "kind": "story",
+ "title": "Tools that build tools, under governance",
+ "subtitle": "A generator that lets agents add new capabilities to the estate, inside a sandbox, callable only after a human restart",
+ "systems": [
+  "fafo-core"
+ ],
+ "technologies": [
+  "Rust",
+  "Code generation",
+  "Handlebars templates",
+  "Model Context Protocol (MCP)",
+  "Link-time registration",
+  "PostgreSQL",
+  "YAML schema compilation"
+ ],
+ "stats": [
+  {
+   "value": "7 of 14",
+   "label": "function crates in the estate carry the generator's fingerprints"
+  },
+  {
+   "value": "14 files",
+   "label": "per function: eight framework, six sandboxed"
+  },
+  {
+   "value": "4",
+   "label": "places written in one rollback-protected transaction per generation"
+  }
+ ],
+ "lede": "My agents could call tools and could not add one. Every new capability meant a human wiring a crate into the gateway, the orchestrator and the result path by hand. I built a generator, exposed as a tool, that lets an agent author a new function for the estate. The generated code runs in a sandbox that sees only a capability-bounded context, cannot open its own connections or write the database directly, and runs only after a human rebuilds and restarts the gateway. AI-written processing code, given a database handle, will build unsafe queries, write tables it should not, and open connections nobody audits.",
+ "quote": "Self-extending systems are where safety usually goes to die.",
+ "evidence": [
+  "Tool synthesis and governed API integration: a generator, itself an MCP tool, that lets an AI agent author a new function, with 7 of 14 function crates in the estate carrying its fingerprints.",
+  "Sandboxing generated code: 14 files per function, eight framework files locked and six in a sandbox that reads through a schema resolver and writes only through the governed queue.",
+  "Transactional code generation: 4 places written in one rollback-protected transaction per generation, with a symmetric delete and link-time registration so nothing is half-registered.",
+  "Human-in-the-loop control for AI agents: a generated function runs only after a human rebuilds and restarts the gateway.",
+  "Self-audit and redesign: a first version that passed its own fifteen-point check but generated code that did not compile, rebuilt with inverted ownership instead of patched."
+ ],
+ "problem": "governed-agents",
+ "canonical": "https://coreyjames.ai/stories/tools-that-build-tools-under-governance/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/tools-that-build-tools-under-governance"
+}

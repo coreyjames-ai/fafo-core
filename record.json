@@ -1,0 +1,50 @@
+{
+ "url": "https://coreyjames.ai/systems/fafo-core/",
+ "kind": "system",
+ "title": "FAFO Core and Function Forge",
+ "subtitle": "The execution substrate under everything else: one function definition becomes an orchestrated, budgeted, agent-callable tool",
+ "systems": [],
+ "technologies": [
+  "Rust",
+  "Redis Streams",
+  "PostgreSQL",
+  "Code generation",
+  "Docker",
+  "Federated provisioning",
+  "Budget enforcement",
+  "YAML schema compilation",
+  "Model Context Protocol (MCP)"
+ ],
+ "stats": [
+  {
+   "value": "7 of 14",
+   "label": "function crates written by the generator"
+  },
+  {
+   "value": "19",
+   "label": "control actions on a job in flight"
+  },
+  {
+   "value": "180",
+   "label": "actions across 18 tools, compiled from YAML schemas"
+  },
+  {
+   "value": "23",
+   "label": "close items on the integration platform, each with an independent verdict"
+  }
+ ],
+ "lede": "Every organisation that puts AI agents to work hits the same wall. Each new capability needs its own integration, orchestration, database plumbing, rate limiting, compute and someone to run it. I was going to build many systems and I did not want to solve orchestration, data safety and spend control more than once. FAFO Core is the substrate where those are solved. One function definition becomes an orchestrated, controllable, agent-callable tool that runs against any registered data source, in-process or in a container on a local machine, a LAN workstation or a rented cloud GPU, under a budget a human set.",
+ "quote": "Rebuild and human restart is slower, and it is the governance step.",
+ "evidence": [
+  "Platform engineering for AI agents: one function definition becomes an orchestrated, budgeted, agent-callable tool, in-process or in a container, local, LAN or cloud, by configuration alone.",
+  "Tool synthesis and governed API integration: a generator that let agents write 7 of 14 function crates in a sandbox, callable only after a human rebuild and restart.",
+  "Job control planes: a Redis-stream command bus with atomic job promotion and 19 control actions on a job in flight, including pause, scale, drain and inspect.",
+  "MCP server design: a model-facing gateway compiling YAML schemas into 180 actions across 18 tools.",
+  "Rust systems engineering: about 168,000 lines across fourteen function crates and 45,000 in the core substrate, with link-time registration so nothing runs half-wired.",
+  "Evidence-gated acceptance: a sibling API integration platform held open until all 23 close items had an independent verdict."
+ ],
+ "canonical": "https://coreyjames.ai/systems/fafo-core/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/fafo-core"
+}

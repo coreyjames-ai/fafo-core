@@ -1,0 +1,43 @@
+{
+ "url": "https://coreyjames.ai/stories/196-deadlocks-to-zero/",
+ "kind": "story",
+ "title": "196 deadlocks to zero",
+ "subtitle": "Measuring a write path from the database itself, and finding that one index was the whole problem",
+ "systems": [
+  "fafo-core"
+ ],
+ "technologies": [
+  "PostgreSQL",
+  "Redis Streams",
+  "Python benchmark tooling",
+  "Rust",
+  "Performance diagnosis"
+ ],
+ "stats": [
+  {
+   "value": "196 → 0",
+   "label": "deadlocks during the run, before and after one index"
+  },
+  {
+   "value": "1.25 M",
+   "label": "rows committed in 185 seconds after the fix"
+  },
+  {
+   "value": "16,370",
+   "label": "peak rows committed a second; 6,752 on average"
+  }
+ ],
+ "lede": "A bulk update workload through my shared write path had slowed to a crawl, with deadlocks every few seconds. The queue in front of the database reported healthy throughput, which was the first clue that the queue was the wrong instrument. I built a harness that measured from the only place that knows how many rows were committed, the database itself, and compared runs before and after a single schema change. The write path is shared by every producer in the estate, so a slow write path slows everything. The obvious metrics were the queue's own counters, and they measure intake: how much work was taken in, and nothing about how much landed.",
+ "quote": "Only the database knows how many rows were committed.",
+ "evidence": [
+  "PostgreSQL performance tuning: a unique index on the update key took deadlocks during a bulk update from 196 to 0 on a write path shared by every producer.",
+  "Performance benchmarking methodology: a harness that samples system load, queue depth and PostgreSQL tuple deltas and compares runs before and after one change, measuring committed rows, not intake.",
+  "Write-path throughput: 1.25 M rows committed in 185 seconds after the fix, 16,370 a second at peak and 6,752 on average.",
+  "Latency diagnosis: batch latency from 100 to 2,000 ms before the index and 7 to 37 ms after it."
+ ],
+ "problem": "data-paths",
+ "canonical": "https://coreyjames.ai/stories/196-deadlocks-to-zero/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/196-deadlocks-to-zero"
+}

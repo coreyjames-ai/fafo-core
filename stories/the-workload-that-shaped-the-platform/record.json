@@ -1,0 +1,47 @@
+{
+ "url": "https://coreyjames.ai/stories/the-workload-that-shaped-the-platform/",
+ "kind": "story",
+ "title": "The workload that shaped the platform",
+ "subtitle": "Generating tens of millions of traceable dataset items on two consumer GPUs, and letting that job decide what the substrate needed",
+ "systems": [
+  "fafo-core",
+  "inference-fabric"
+ ],
+ "technologies": [
+  "Rust",
+  "PostgreSQL",
+  "Redis",
+  "TensorRT-LLM",
+  "Grafana",
+  "Data pipeline engineering",
+  "NVIDIA Blackwell GPUs"
+ ],
+ "stats": [
+  {
+   "value": "876K",
+   "label": "probes submitted in one captured window"
+  },
+  {
+   "value": "131 M",
+   "label": "tokens pending in the same window, with zero retries"
+  },
+  {
+   "value": "156/s",
+   "label": "probes per second through that window"
+  }
+ ],
+ "lede": "My distillation research needed tens of millions of model-generated dataset items, each traceable back to the knowledge it was drawn from, produced fast enough to keep two GPUs saturated. Dataset construction at this scale is an industrial data pipeline. Every item needs a persistent identity so a crash does not lose it or run it twice. Writes span several tables and must stay referentially consistent. Prompts have to be shaped so the inference engine can reuse cached work across millions of near-identical requests. And none of it may wait on anything else. Two consumer GPUs. Nothing waits: a slow writer must not stall generation, and a busy GPU must not stall producers.",
+ "quote": "I did not design a platform and then look for a workload. I ran the workload and built exactly what it forced.",
+ "evidence": [
+  "High-throughput batch inference: a dataset pipeline that kept two consumer GPUs saturated, with 876K probes submitted in one captured window at 156/s.",
+  "Token-aware scheduling: shape-similar batches with minimal padding, 131 M tokens pending in the same window with zero retries.",
+  "Exactly-once delivery and crash recovery: lease-based claiming, multi-table atomic writes and recovery of buffered items after a broker loss, so work was neither lost nor run twice.",
+  "Data pipeline engineering with provenance: tens of millions of model-generated dataset items, each traceable to the knowledge it was drawn from.",
+  "Platform design from workloads: each wall the pipeline hit added the one capability it forced, including a decoupled submit-and-exit producer with a separate completion service."
+ ],
+ "problem": "gpu-economics",
+ "canonical": "https://coreyjames.ai/stories/the-workload-that-shaped-the-platform/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/the-workload-that-shaped-the-platform"
+}

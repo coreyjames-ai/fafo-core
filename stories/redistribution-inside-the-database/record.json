@@ -1,0 +1,45 @@
+{
+ "url": "https://coreyjames.ai/stories/redistribution-inside-the-database/",
+ "kind": "story",
+ "title": "Redistribution inside the database",
+ "subtitle": "The lattice functions that grow, protect and score concept clusters over millions of vectors without leaving PostgreSQL",
+ "systems": [
+  "fafo-core",
+  "capabilities-model"
+ ],
+ "technologies": [
+  "PostgreSQL",
+  "pgvector",
+  "SQL",
+  "Rust",
+  "Hybrid retrieval"
+ ],
+ "stats": [
+  {
+   "value": "1,024",
+   "label": "dimensions in every unit's embedding"
+  },
+  {
+   "value": "8",
+   "label": "signals weighted into each cluster's pressure"
+  },
+  {
+   "value": "~11,000",
+   "label": "lines of Rust in the sole acceptance authority for new clusters"
+  }
+ ],
+ "lede": "My distillation corpus is a lattice: question-and-answer units, each with a 1,024-dimension embedding, grouped into concept clusters with a centroid, a tier and a pressure score. The lattice has to grow where it is thin, stay stable where it is dense, admit new clusters only on evidence, and never let its seed units move. I built those behaviours as functions that run inside PostgreSQL, because the work is a set of index-backed nearest-neighbour queries and one atomic update, and moving millions of vectors to an application server would cost more than the work itself. Every cluster carries a saturation pressure between zero and one, higher meaning more need to grow.",
+ "quote": "Fill once, protect seeds, keep history, and the lattice converges instead of churning.",
+ "evidence": [
+  "In-database computation with PostgreSQL and pgvector: lattice functions that grow, protect and score concept clusters over millions of vectors of 1,024 dimensions without leaving the database.",
+  "Vector search and ANN indexes: lateral nearest-neighbour queries through an inverted-file index, so each centroid search uses the index instead of a cross product.",
+  "Transactional data redistribution: one function runs a whole schema as a single transaction, moves units in one update, and logs fills and drains with counts and a run id.",
+  "Deterministic acceptance scoring: ~11,000 lines of Rust as the sole acceptance authority for new clusters, every failed test returned as a reason.",
+  "Tunable data-quality models: cluster pressure from 8 weighted signals, four protection rules counted separately, and three presets from conservative to aggressive."
+ ],
+ "problem": "data-paths",
+ "canonical": "https://coreyjames.ai/stories/redistribution-inside-the-database/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/redistribution-inside-the-database"
+}

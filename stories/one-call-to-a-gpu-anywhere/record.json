@@ -1,0 +1,52 @@
+{
+ "url": "https://coreyjames.ai/stories/one-call-to-a-gpu-anywhere/",
+ "kind": "story",
+ "title": "One call to a GPU anywhere",
+ "subtitle": "Provisioning a GPU consumer node on the workbench, on a LAN host or in the cloud with one tool call, under a daily budget that only a human can set",
+ "systems": [
+  "fafo-core",
+  "inference-fabric",
+  "agentos"
+ ],
+ "technologies": [
+  "Federated compute provisioning",
+  "Budget enforcement and cost governance",
+  "Docker",
+  "TLS and mTLS",
+  "Redis",
+  "PostgreSQL",
+  "RunPod"
+ ],
+ "stats": [
+  {
+   "value": "15",
+   "label": "actions on the one provisioning tool"
+  },
+  {
+   "value": "0",
+   "label": "inbound ports for a cloud pod to reach the estate"
+  },
+  {
+   "value": "30 s",
+   "label": "between budget checks on every container, healthy ones included"
+  },
+  {
+   "value": "$0",
+   "label": "the day's budget when no limit row exists"
+  }
+ ],
+ "lede": "An agent in my estate can stand up a GPU worker with one tool call: a container image, an engine, a provider, and where it should run. The same call starts a container on my workbench over the local socket, on a LAN workstation over mutual TLS, or on a rented cloud pod that dials back into my network with no inbound ports. Before any of that happens, a budget gate checks the day's dollar cap, which is set by a human with a command-line tool that is not on any agent's tool surface. Spend is metered from the second the provider confirms the pod, and a container that outlives the budget is terminated.",
+ "quote": "Missing or invalid state can only yield zero or an error, never a larger cap.",
+ "evidence": [
+  "Cloud GPU provisioning with cost controls: one tool with 15 actions stands up a GPU worker on the workbench, a LAN host or a rented cloud pod.",
+  "Zero-trust and zero-inbound networking: cloud pods dial back through an outbound tunnel, reaching Redis and PostgreSQL with 0 inbound ports; LAN hosts are driven over mutual TLS from a private certificate authority.",
+  "Budget enforcement for AI agents: a daily dollar cap set only by a human command-line tool, checked before any side effect, failing closed at $0 when no limit row exists.",
+  "Metering and reconciliation: spend accumulated per container, per schema and globally, with health checks every 30 s that terminate any container still up once the budget is spent.",
+  "Container runtime design: one host-built runtime binary bind-mounted with a loader into any image, and four loader modes that decide what a container becomes."
+ ],
+ "problem": "gpu-economics",
+ "canonical": "https://coreyjames.ai/stories/one-call-to-a-gpu-anywhere/",
+ "datePublished": "2026-10-28",
+ "author": "Corey James",
+ "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/one-call-to-a-gpu-anywhere"
+}
