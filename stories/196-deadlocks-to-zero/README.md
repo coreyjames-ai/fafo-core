@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/196-deadlocks-to-zero/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735130 (this page is a chapter of the system's report)  
 Systems: [FAFO Core and Function Forge](https://github.com/coreyjames-ai/fafo-core)  
 Technologies: [Database performance diagnosis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/database-performance-diagnosis) · [Evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/evidence-gated-acceptance) · [Lease-based work claiming](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/lease-based-work-claiming) · [Lua](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/lua) · [MessagePack](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/messagepack) · [Performance engineering and benchmarking](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/performance-engineering-and-benchmarking) · [PostgreSQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql) · [PostgreSQL bulk-update engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql-bulk-update-engineering) · [Python](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/python) · [Redis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/redis) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [SQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/sql) · [Write-behind persistence](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/write-behind-persistence)  
 Skills: [PostgreSQL performance tuning](https://github.com/coreyjames-ai/portfolio/tree/main/skills/postgresql-performance-tuning)  
@@ -80,7 +81,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "196 deadlocks to zero." coreyjames.ai, 2026. https://coreyjames.ai/stories/196-deadlocks-to-zero/
+Corey James. "196 deadlocks to zero." coreyjames.ai, 2026. https://coreyjames.ai/stories/196-deadlocks-to-zero/ In: the FAFO Core and Function Forge technical report, doi:10.5281/zenodo.23735130.
 
 ```bibtex
 @misc{coreyjames-196-deadlocks-to-zero,
@@ -88,7 +89,8 @@ Corey James. "196 deadlocks to zero." coreyjames.ai, 2026. https://coreyjames.ai
   title = {196 deadlocks to zero},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/196-deadlocks-to-zero/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/196-deadlocks-to-zero}
+  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/196-deadlocks-to-zero},
+  doi = {10.5281/zenodo.23735130}
 }
 ```
 

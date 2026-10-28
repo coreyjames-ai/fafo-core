@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: Cite this repository's report by its DOI.
+type: dataset
+title: "FAFO Core and Function Forge: The execution substrate under everything else: one function definition becomes an orchestrated, budgeted, agent-callable tool"
+authors:
+  - given-names: Corey
+    family-names: James
+    orcid: https://orcid.org/0009-0008-7246-963X
+doi: 10.5281/zenodo.23735130
+date-released: 2026-10-28
+url: https://coreyjames.ai/systems/fafo-core/
+repository-code: https://github.com/coreyjames-ai/fafo-core
+license: CC-BY-4.0
+abstract: "The execution substrate under everything else: one function definition becomes an orchestrated, budgeted, agent-callable tool"

@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/one-call-to-a-gpu-anywhere/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735130 (this page is a chapter of the system's report)  
 Systems: [FAFO Core and Function Forge](https://github.com/coreyjames-ai/fafo-core) · [Inference Fabric](https://github.com/coreyjames-ai/inference-fabric) · [AgentOS](https://github.com/coreyjames-ai/agentos)  
 Technologies: [Budget enforcement and cost governance](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/budget-enforcement-and-cost-governance) · [Docker](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/docker) · [Federated compute provisioning](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/federated-compute-provisioning) · [PostgreSQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql) · [Redis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/redis) · [RunPod](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/runpod) · [TLS and mTLS](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/tls-and-mtls)  
 Skills: [zero-trust and zero-inbound networking](https://github.com/coreyjames-ai/portfolio/tree/main/skills/zero-trust-and-zero-inbound-networking) · [cost attribution for AI work](https://github.com/coreyjames-ai/portfolio/tree/main/skills/cost-attribution-for-ai-work) · [tool synthesis and governed API integration](https://github.com/coreyjames-ai/portfolio/tree/main/skills/tool-synthesis-and-governed-api-integration) · [distributed systems correctness](https://github.com/coreyjames-ai/portfolio/tree/main/skills/distributed-systems-correctness)  
@@ -91,7 +92,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "One call to a GPU anywhere." coreyjames.ai, 2026. https://coreyjames.ai/stories/one-call-to-a-gpu-anywhere/
+Corey James. "One call to a GPU anywhere." coreyjames.ai, 2026. https://coreyjames.ai/stories/one-call-to-a-gpu-anywhere/ In: the FAFO Core and Function Forge technical report, doi:10.5281/zenodo.23735130.
 
 ```bibtex
 @misc{coreyjames-one-call-to-a-gpu-anywhere,
@@ -99,7 +100,8 @@ Corey James. "One call to a GPU anywhere." coreyjames.ai, 2026. https://coreyjam
   title = {One call to a GPU anywhere},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/one-call-to-a-gpu-anywhere/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/one-call-to-a-gpu-anywhere}
+  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/one-call-to-a-gpu-anywhere},
+  doi = {10.5281/zenodo.23735130}
 }
 ```
 

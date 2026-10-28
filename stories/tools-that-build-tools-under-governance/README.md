@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/tools-that-build-tools-under-governance/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735130 (this page is a chapter of the system's report)  
 Systems: [FAFO Core and Function Forge](https://github.com/coreyjames-ai/fafo-core)  
 Technologies: [Agent tool-execution safety and sandboxing](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/agent-tool-execution-safety-and-sandboxing) · [Axum](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/axum) · [Code generation and metaprogramming](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/code-generation-and-metaprogramming) · [Evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/evidence-gated-acceptance) · [Handlebars](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/handlebars) · [JSON-RPC](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/json-rpc) · [Link-time plugin registration](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/link-time-plugin-registration) · [Model Context Protocol (MCP)](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-context-protocol-mcp) · [PostgreSQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql) · [Python](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/python) · [Reversible infrastructure mutation](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/reversible-infrastructure-mutation) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [Schema-agnostic data access and SQL-injection defence](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/schema-agnostic-data-access-and-sql-injection-defence) · [Schema-driven build-time code generation](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/schema-driven-build-time-code-generation) · [YAML](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/yaml) · [sqlx](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/sqlx)  
 Skills: [tool synthesis and governed API integration](https://github.com/coreyjames-ai/portfolio/tree/main/skills/tool-synthesis-and-governed-api-integration) · [AI-assisted engineering methodology](https://github.com/coreyjames-ai/portfolio/tree/main/skills/ai-assisted-engineering-methodology) · [sandboxing and container hardening](https://github.com/coreyjames-ai/portfolio/tree/main/skills/sandboxing-and-container-hardening) · [Rust systems engineering](https://github.com/coreyjames-ai/portfolio/tree/main/skills/rust-systems-engineering)  
@@ -91,7 +92,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Tools that build tools, under governance." coreyjames.ai, 2026. https://coreyjames.ai/stories/tools-that-build-tools-under-governance/
+Corey James. "Tools that build tools, under governance." coreyjames.ai, 2026. https://coreyjames.ai/stories/tools-that-build-tools-under-governance/ In: the FAFO Core and Function Forge technical report, doi:10.5281/zenodo.23735130.
 
 ```bibtex
 @misc{coreyjames-tools-that-build-tools-under-governance,
@@ -99,7 +100,8 @@ Corey James. "Tools that build tools, under governance." coreyjames.ai, 2026. ht
   title = {Tools that build tools, under governance},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/tools-that-build-tools-under-governance/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/tools-that-build-tools-under-governance}
+  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/tools-that-build-tools-under-governance},
+  doi = {10.5281/zenodo.23735130}
 }
 ```
 

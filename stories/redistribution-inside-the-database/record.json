@@ -41,5 +41,8 @@
  "canonical": "https://coreyjames.ai/stories/redistribution-inside-the-database/",
  "datePublished": "2026-10-28",
  "author": "Corey James",
- "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/redistribution-inside-the-database"
+ "github": "https://github.com/coreyjames-ai/fafo-core/tree/main/stories/redistribution-inside-the-database",
+ "doi": "10.5281/zenodo.23735130",
+ "doi_relation": "part-of",
+ "author_orcid": "https://orcid.org/0009-0008-7246-963X"
 }

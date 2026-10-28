@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/the-workload-that-shaped-the-platform/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735130 (this page is a chapter of the system's report)  
 Systems: [FAFO Core and Function Forge](https://github.com/coreyjames-ai/fafo-core) · [Inference Fabric](https://github.com/coreyjames-ai/inference-fabric)  
 Technologies: [Distributed job orchestration](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/distributed-job-orchestration) · [Grafana](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/grafana) · [Hidden-state extraction](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/hidden-state-extraction) · [Large-scale GPU data pipelines](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/large-scale-gpu-data-pipelines) · [Lease-based work claiming](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/lease-based-work-claiming) · [Lua](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/lua) · [Model families and types](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/model-families-and-types) · [NVIDIA Blackwell GPUs](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/nvidia-blackwell-gpus) · [NVIDIA TensorRT-LLM](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/nvidia-tensorrt-llm) · [PostgreSQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql) · [Redis](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/redis) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [Synthetic training-data generation](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/synthetic-training-data-generation) · [Token-aware GPU batch scheduling](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/token-aware-gpu-batch-scheduling)  
 Skills: [exactly-once delivery and crash recovery](https://github.com/coreyjames-ai/portfolio/tree/main/skills/exactly-once-delivery-and-crash-recovery) · [high-throughput batch inference](https://github.com/coreyjames-ai/portfolio/tree/main/skills/high-throughput-batch-inference) · [token-aware scheduling](https://github.com/coreyjames-ai/portfolio/tree/main/skills/token-aware-scheduling) · [inference serving architecture](https://github.com/coreyjames-ai/portfolio/tree/main/skills/inference-serving-architecture)  
@@ -96,7 +97,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "The workload that shaped the platform." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-workload-that-shaped-the-platform/
+Corey James. "The workload that shaped the platform." coreyjames.ai, 2026. https://coreyjames.ai/stories/the-workload-that-shaped-the-platform/ In: the FAFO Core and Function Forge technical report, doi:10.5281/zenodo.23735130.
 
 ```bibtex
 @misc{coreyjames-the-workload-that-shaped-the-platform,
@@ -104,7 +105,8 @@ Corey James. "The workload that shaped the platform." coreyjames.ai, 2026. https
   title = {The workload that shaped the platform},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/the-workload-that-shaped-the-platform/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/the-workload-that-shaped-the-platform}
+  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/the-workload-that-shaped-the-platform},
+  doi = {10.5281/zenodo.23735130}
 }
 ```
 

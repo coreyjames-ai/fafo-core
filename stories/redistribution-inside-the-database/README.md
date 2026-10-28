@@ -4,6 +4,7 @@
 
 Canonical: https://coreyjames.ai/stories/redistribution-inside-the-database/  
 Author: Corey James · Published: 2026-10-28 · Kind: story  
+DOI: https://doi.org/10.5281/zenodo.23735130 (this page is a chapter of the system's report)  
 Systems: [FAFO Core and Function Forge](https://github.com/coreyjames-ai/fafo-core) · [Capabilities model](https://github.com/coreyjames-ai/capabilities-model)  
 Technologies: [Hybrid retrieval](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/hybrid-retrieval) · [PostgreSQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql) · [PostgreSQL bulk-update engineering](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/postgresql-bulk-update-engineering) · [Rust](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/rust) · [SQL](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/sql) · [pgvector](https://github.com/coreyjames-ai/portfolio/tree/main/technologies/pgvector)  
 Skills: [vector search and ANN indexes](https://github.com/coreyjames-ai/portfolio/tree/main/skills/vector-search-and-ann-indexes) · [embedding analytics and cluster metrics](https://github.com/coreyjames-ai/portfolio/tree/main/skills/embedding-analytics-and-cluster-metrics) · [Rust systems engineering](https://github.com/coreyjames-ai/portfolio/tree/main/skills/rust-systems-engineering) · [evidence-gated acceptance](https://github.com/coreyjames-ai/portfolio/tree/main/skills/evidence-gated-acceptance)  
@@ -75,7 +76,7 @@ Each line is a claim the canonical page supports, with the figure as the page st
 
 ## Citation
 
-Corey James. "Redistribution inside the database." coreyjames.ai, 2026. https://coreyjames.ai/stories/redistribution-inside-the-database/
+Corey James. "Redistribution inside the database." coreyjames.ai, 2026. https://coreyjames.ai/stories/redistribution-inside-the-database/ In: the FAFO Core and Function Forge technical report, doi:10.5281/zenodo.23735130.
 
 ```bibtex
 @misc{coreyjames-redistribution-inside-the-database,
@@ -83,7 +84,8 @@ Corey James. "Redistribution inside the database." coreyjames.ai, 2026. https://
   title = {Redistribution inside the database},
   year = {2026},
   howpublished = {\url{https://coreyjames.ai/stories/redistribution-inside-the-database/}},
-  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/redistribution-inside-the-database}
+  note = {GitHub copy: https://github.com/coreyjames-ai/fafo-core/tree/main/stories/redistribution-inside-the-database},
+  doi = {10.5281/zenodo.23735130}
 }
 ```
 
